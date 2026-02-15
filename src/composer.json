@@ -3,5 +3,13 @@
       "psr-4": {
           "POSSE\\": "./"
       }
+  },
+  "require": {
+      "verot/class.upload.php": "^2.1"
+  },
+  "config": {
+      "audit": {
+          "ignore": ["PKSA-3n81-fgxd-xfh7"]
+      }
   }
 }

@@ -37,3 +37,6 @@ RUN echo "display_errors = On" > /usr/local/etc/php/conf.d/learning.ini && \
     echo "opcache.enable = 0" >> /usr/local/etc/php/conf.d/learning.ini
 
 WORKDIR /var/www/html
+
+# Composer の最新版を install
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
